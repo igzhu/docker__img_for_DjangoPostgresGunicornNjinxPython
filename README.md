@@ -1,4 +1,4 @@
-# Django clean draft project on Docker
+# Django clean draft project on Docker (Чистый проект Django на Docker)
 # docker__img_for_DjangoPostgresGunicornNjinxPython
 
   Docker образ для dev/prod содержащий чистый Django проект
