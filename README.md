@@ -1,3 +1,4 @@
+# Django clean draft project on Docker
 # docker__img_for_DjangoPostgresGunicornNjinxPython
 
   Docker образ для dev/prod содержащий чистый Django проект
@@ -9,6 +10,7 @@
   Django admin user: name - admin, password - admin6789admin.
 
 ==========================================================================
+
   This is a simple Django dev/prod clean daft project.
   Content: AlpineLinux, Django, Python, Postgres, Gunicorn, Nginx.
   Env(inline '-e' or '--env_file'): DEBUG, SECRET_KEY, ALLOWED_HOSTS.
