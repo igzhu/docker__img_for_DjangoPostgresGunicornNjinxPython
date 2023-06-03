@@ -6,12 +6,12 @@ ENV DEBUG=1
 ENV SECRET_KEY=django_secretkey1234567
 ENV ALLOWED_HOSTS="hello_django localhost 127.0.0.1"
 
-# nginx install
+# nginx/postgres install
 RUN apk update
 RUN apk add --no-cache nginx postgresql
 
 # support for postgres:
-RUN apk add --no-cache postgresql-dev gcc python3-dev musl-dev
+#RUN apk add --no-cache postgresql-dev gcc python3-dev musl-dev
 
 # install requirements for Django project (gunicorn also here)
 #RUN pip install --upgrade pip  -- commented for escape unwanted pip modify in the future
@@ -29,8 +29,4 @@ EXPOSE 5432 8000 8080
 
 VOLUME /var/lib/postgresql/
 
-#run ["DJANGO_SUPERUSER_USERNAME=testuser", "DJANGO_SUPERUSER_PASSWORD=testpass", \
-#     "DJANGO_SUPERUSER_EMAIL='admin@admin.com'", "python", "manage.py", "createsuperuser", "--noinput"]
-#CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
-#CMD python manage.py runserver 0.0.0.0:8000
 ENTRYPOINT ["./entrypoint.sh"]
