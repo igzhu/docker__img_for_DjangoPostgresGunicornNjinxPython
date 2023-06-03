@@ -15,7 +15,9 @@
 
   This is a simple Django dev/prod clean daft project.
   Content: AlpineLinux, Django, Python, Postgres, Gunicorn, Nginx.
+  
   Env(inline '-e' or '--env_file'): DEBUG, SECRET_KEY, ALLOWED_HOSTS.
+  
   Django admin user: name - admin, password - admin6789admin.
 
   common usage: docker run -p 8080:8080 <img_name> - then look for http://localhost:8080.
