@@ -5,8 +5,10 @@
   с AlpineLinux, Python, Postgres, Gunicorn и Nginx.
   По умолчанию запускается в окружении DEV, 
   для PROD надо передать docker inline параметр -e DEBUG=0 (илм --env-file соответсвенно).
+  
     docker run -p 8080:8080 <img_name> - запуск проекта http://localhost:8080
   ENV параметры: DEBUG, SECRET_KEY, ALLOWED_HOSTS.
+  
   Django admin user: name - admin, password - admin6789admin.
 
 ==========================================================================
