@@ -1,4 +1,4 @@
-"# docker__img_for_DjangoPostgresGunicornNjinxPython"
+# docker__img_for_DjangoPostgresGunicornNjinxPython
 
   Docker образ для dev/prod содержащий чистый Django проект
   с AlpineLinux, Python, Postgres, Gunicorn и Nginx.
