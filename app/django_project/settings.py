@@ -29,7 +29,7 @@ SECRET_KEY = environ.get('SECRET_KEY')
 DEBUG = int(environ.get('DEBUG', default=1))
 CSRF_TRUSTED_ORIGINS = ['http://hello_django', 'http://localhost:8080', 'http://127.0.0.1:8080']
 #ALLOWED_HOSTS = ["localhost", "hello_django", "127.0.0.1", "[::1]"]
-#ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', default="hello_django localhost 127.0.0.1").split(' ')
+ALLOWED_HOSTS = environ.get('ALLOWED_HOSTS', default="hello_django localhost 127.0.0.1").split(' ')
 
 
 # Application definition
